@@ -2,7 +2,9 @@
 
 [![CI](https://github.com/DudeCalledBro/docker-latex/actions/workflows/ci.yml/badge.svg)](https://github.com/DudeCalledBro/docker-latex/actions/workflows/ci.yml)
 
-This repository maintains the code for my LaTeX container image, which is designed to streamline the process of generating LaTeX documents. By utilizing this container image, users can easily integrate it into their CI/CD pipelines, enabling automated TeX build processes. This setup not only enhances efficiency but also ensures consistency across different environments, making it easier to manage and compile LaTeX documents as part of a larger workflow. Whether for academic papers, reports, or presentations, this container image simplifies the complexities of document generation and allows for seamless collaboration among team members.
+This repository maintains the code for my LaTeX container image, which is designed to streamline the process of generating LaTeX documents. By utilizing this container image, users can easily integrate it into their CI/CD pipelines, enabling automated TeX build processes.
+
+This setup not only enhances efficiency but also ensures consistency across different environments, making it easier to manage and compile LaTeX documents as part of a larger workflow. Whether for academic papers, reports, or presentations, this container image simplifies the complexities of document generation and allows for seamless collaboration among team members.
 
 ## Build
 
