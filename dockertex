@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# see http://www.gnu.org/s/bash/manual/html_node/The-Set-Builtin.html
+set -o nounset  # exit on unitialized vars
+set -o errexit  # exit on [ $? != 0]
+set -o pipefail # exit on pipeline errors
+
+lualatex --shell-escape $1
