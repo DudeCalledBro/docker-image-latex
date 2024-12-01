@@ -30,6 +30,4 @@ RUN apt-get -qy update \
     && apt-get clean -qy \
     && rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man
 
-COPY --chmod=0770 dockertex /usr/local/bin/
-
 CMD ["lualatex", "--version"]
