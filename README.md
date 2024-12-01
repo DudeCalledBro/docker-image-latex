@@ -20,7 +20,7 @@ Once downloaded, you can use this image to compile LaTeX documents without needi
 docker run --rm -v $(pwd):/data dudecalledbro/docker-latex:latest lualatex your_document.tex
 ```
 
- This command mounts your current directory to the `/data` directory in the container and runs the pdflatex command on `your_document.tex`.
+ This command mounts your current directory to the `/data` directory in the container and runs the lualatex command on `your_document.tex`.
 
 ## Build
 
