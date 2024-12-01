@@ -17,7 +17,7 @@ docker pull dudecalledbro/docker-latex:latest
 Once downloaded, you can use this image to compile LaTeX documents without needing to install LaTeX and its packages on your local system. This approach provides a consistent and isolated environment for LaTeX compilation across different machines. To compile a LaTeX document using this image, you can use a command similar to:
 
 ```bash
-docker run --rm -v $(pwd):/data dudecalledbro/docker-latex:latest lualatex --shell-escape your_document.tex
+docker run --rm -v $(pwd):/data dudecalledbro/docker-latex:latest lualatex your_document.tex
 ```
 
  This command mounts your current directory to the `/data` directory in the container and runs the pdflatex command on `your_document.tex`.
