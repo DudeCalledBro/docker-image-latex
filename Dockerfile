@@ -2,7 +2,7 @@ FROM ubuntu:22.04
 
 LABEL org.opencontainers.image.authors="Niclas Spreng"
 LABEL org.opencontainers.image.description="LaTeX Docker Container"
-LABEL org.opencontainers.image.source=https://github.com/DudeCalledBro/docker-latex
+LABEL org.opencontainers.image.source=https://github.com/DudeCalledBro/docker-image-latex
 
 ARG DEBIAN_FRONTEND=noninteractive
 

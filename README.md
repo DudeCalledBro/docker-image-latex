@@ -1,6 +1,6 @@
 # LaTeX Docker
 
-[![CI](https://github.com/DudeCalledBro/docker-latex/actions/workflows/ci.yml/badge.svg)](https://github.com/DudeCalledBro/docker-latex/actions/workflows/ci.yml)
+[![CI](https://github.com/DudeCalledBro/docker-image-latex/actions/workflows/ci.yml/badge.svg)](https://github.com/DudeCalledBro/docker-image-latex/actions/workflows/ci.yml)
 
 This repository maintains the code for my LaTeX container image, which is designed to streamline the process of generating LaTeX documents. By utilizing this container image, users can easily integrate it into their CI/CD pipelines, enabling automated TeX build processes.
 
@@ -8,16 +8,16 @@ This setup not only enhances efficiency but also ensures consistency across diff
 
 ## Usage
 
-The Docker image can be downloaded from the repository [dudecalledbro/docker-latex](https://hub.docker.com/r/dudecalledbro/docker-latex). To use this image, you can pull it from Docker Hub using the following command:
+The Docker image can be downloaded from the repository [dudecalledbro/latex](https://hub.docker.com/r/dudecalledbro/latex). To use this image, you can pull it from Docker Hub using the following command:
 
 ```bash
-docker pull dudecalledbro/docker-latex:latest
+docker pull dudecalledbro/latex:latest
 ```
 
 Once downloaded, you can use this image to compile LaTeX documents without needing to install LaTeX and its packages on your local system. This approach provides a consistent and isolated environment for LaTeX compilation across different machines. To compile a LaTeX document using this image, you can use a command similar to:
 
 ```bash
-docker run --rm -v $(pwd):/data dudecalledbro/docker-latex:latest lualatex your_document.tex
+docker run --rm -v $(pwd):/data dudecalledbro/latex:latest lualatex your_document.tex
 ```
 
  This command mounts your current directory to the `/data` directory in the container and runs the lualatex command on `your_document.tex`.
